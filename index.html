@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+  <head>
+    <title>Angular 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="app/css/fonts.css">
+  	<link rel="stylesheet" href="app/css/style.min.css">
+  	<link rel="stylesheet" href="app/css/media.css">
+
+  	<script src="app/libs/modernizr/modernizr.min.js"></script>
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err);  });
+    </script>
+  </head>
+
+  <body>
+    <my-app>Loading...</my-app>
+
+  	<!--[if lt IE 9]>
+  	<script src="app/libs/html5shiv/es5-shim.min.js"></script>
+  	<script src="app/libs/html5shiv/html5shiv.min.js"></script>
+  	<script src="app/libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  	<script src="app/libs/respond/respond.min.js"></script>
+  	<![endif]-->
+  </body>
+</html>

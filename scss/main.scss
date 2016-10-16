@@ -1,0 +1,144 @@
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/libsass-compass-vertical-rhythm/lib/compass_rhythm";
+
+//susy
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+	container: 60em,
+	math: fluid,
+	output: float,
+	gutter-position: inside
+);
+
+/*
+  //Add container
+  @include container();
+
+  //Using Compass Vertical Rhythm
+  @include margin-trailer(1);
+  @include margin-leader(1);
+*/
+
+//some base rules
+*::-webkit-input-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+*:-moz-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+html.js .loader {
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+html.js .loader_inner {
+    background-image: url("../img/preloader.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.6;
+    font-family: "RobotoRegular", sans-serif;
+    color: #454546;
+    overflow-x: hidden;
+}
+.hidden {
+    display: none;
+}
+
+/* Some typography rules */
+h1 {
+  font-size: 34px;
+  font-size: 2.125rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+p {
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
